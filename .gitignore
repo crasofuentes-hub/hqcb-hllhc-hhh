@@ -20,3 +20,10 @@ Thumbs.db
 
 # Figures / outputs
 docs/figures/*.png
+*.pyc
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+ENV/
+env/
+.eggs/
