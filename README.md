@@ -1,5 +1,7 @@
 # HQCB-HL-LHC Higgs Self-Coupling Toolkit (κλ / λ_HHH)
 
+[![CI](https://github.com/crasofuentes-hub/hqcb-hllhc-hhh/actions/workflows/ci.yml/badge.svg?branch=main)](https://github.com/crasofuentes-hub/hqcb-hllhc-hhh/actions/workflows/ci.yml)
+
 **Autor:** Oscar Fuentes Fernández  
 **Repositorio:** crasofuentes-hub/hqcb-hllhc-hhh  
 **Licencia:** **GNU AGPL-3.0-or-later** (copyleft fuerte; uso en red requiere publicar modificaciones)  
