@@ -1,0 +1,293 @@
+﻿windows (3.13)	Set up job	∩╗┐2026-01-22T12:53:39.0783848Z Current runner version: '2.331.0'
+windows (3.13)	Set up job	2026-01-22T12:53:39.0986439Z ##[group]Runner Image Provisioner
+windows (3.13)	Set up job	2026-01-22T12:53:39.0987200Z Hosted Compute Agent
+windows (3.13)	Set up job	2026-01-22T12:53:39.0987687Z Version: 20251211.462
+windows (3.13)	Set up job	2026-01-22T12:53:39.0988350Z Commit: 6cbad8c2bb55d58165063d031ccabf57e2d2db61
+windows (3.13)	Set up job	2026-01-22T12:53:39.0988999Z Build Date: 2025-12-11T16:28:49Z
+windows (3.13)	Set up job	2026-01-22T12:53:39.0989625Z Worker ID: {483a88c2-f3f4-4009-819d-4b090e2743b6}
+windows (3.13)	Set up job	2026-01-22T12:53:39.0990276Z ##[endgroup]
+windows (3.13)	Set up job	2026-01-22T12:53:39.0990731Z ##[group]Operating System
+windows (3.13)	Set up job	2026-01-22T12:53:39.0991276Z Microsoft Windows Server 2025
+windows (3.13)	Set up job	2026-01-22T12:53:39.0991771Z 10.0.26100
+windows (3.13)	Set up job	2026-01-22T12:53:39.0992258Z Datacenter
+windows (3.13)	Set up job	2026-01-22T12:53:39.0992692Z ##[endgroup]
+windows (3.13)	Set up job	2026-01-22T12:53:39.0993128Z ##[group]Runner Image
+windows (3.13)	Set up job	2026-01-22T12:53:39.0993591Z Image: windows-2025
+windows (3.13)	Set up job	2026-01-22T12:53:39.0994049Z Version: 20260111.179.1
+windows (3.13)	Set up job	2026-01-22T12:53:39.0994991Z Included Software: https://github.com/actions/runner-images/blob/win25/20260111.179/images/windows/Windows2025-Readme.md
+windows (3.13)	Set up job	2026-01-22T12:53:39.0996699Z Image Release: https://github.com/actions/runner-images/releases/tag/win25%2F20260111.179
+windows (3.13)	Set up job	2026-01-22T12:53:39.0997530Z ##[endgroup]
+windows (3.13)	Set up job	2026-01-22T12:53:39.0999025Z ##[group]GITHUB_TOKEN Permissions
+windows (3.13)	Set up job	2026-01-22T12:53:39.1000771Z Contents: read
+windows (3.13)	Set up job	2026-01-22T12:53:39.1001339Z Metadata: read
+windows (3.13)	Set up job	2026-01-22T12:53:39.1001766Z Packages: read
+windows (3.13)	Set up job	2026-01-22T12:53:39.1002270Z ##[endgroup]
+windows (3.13)	Set up job	2026-01-22T12:53:39.1004233Z Secret source: Actions
+windows (3.13)	Set up job	2026-01-22T12:53:39.1004886Z Prepare workflow directory
+windows (3.13)	Set up job	2026-01-22T12:53:39.1318139Z Prepare all required actions
+windows (3.13)	Set up job	2026-01-22T12:53:39.1355559Z Getting action download info
+windows (3.13)	Set up job	2026-01-22T12:53:39.3467526Z Download action repository 'actions/checkout@v4' (SHA:34e114876b0b11c390a56381ad16ebd13914f8d5)
+windows (3.13)	Set up job	2026-01-22T12:53:39.5616891Z Download action repository 'actions/setup-python@v5' (SHA:a26af69be951a213d495a4c3e4e4022e16d87065)
+windows (3.13)	Set up job	2026-01-22T12:53:40.1467416Z Complete job name: windows (3.13)
+windows (3.13)	Checkout	∩╗┐2026-01-22T12:53:40.4245159Z ##[group]Run actions/checkout@v4
+windows (3.13)	Checkout	2026-01-22T12:53:40.4246467Z with:
+windows (3.13)	Checkout	2026-01-22T12:53:40.4246975Z   repository: crasofuentes-hub/hqcb-hllhc-hhh
+windows (3.13)	Checkout	2026-01-22T12:53:40.4247712Z   token: ***
+windows (3.13)	Checkout	2026-01-22T12:53:40.4248067Z   ssh-strict: true
+windows (3.13)	Checkout	2026-01-22T12:53:40.4248427Z   ssh-user: git
+windows (3.13)	Checkout	2026-01-22T12:53:40.4248795Z   persist-credentials: true
+windows (3.13)	Checkout	2026-01-22T12:53:40.4249214Z   clean: true
+windows (3.13)	Checkout	2026-01-22T12:53:40.4249579Z   sparse-checkout-cone-mode: true
+windows (3.13)	Checkout	2026-01-22T12:53:40.4250033Z   fetch-depth: 1
+windows (3.13)	Checkout	2026-01-22T12:53:40.4250381Z   fetch-tags: false
+windows (3.13)	Checkout	2026-01-22T12:53:40.4250741Z   show-progress: true
+windows (3.13)	Checkout	2026-01-22T12:53:40.4251105Z   lfs: false
+windows (3.13)	Checkout	2026-01-22T12:53:40.4251611Z   submodules: false
+windows (3.13)	Checkout	2026-01-22T12:53:40.4252696Z   set-safe-directory: true
+windows (3.13)	Checkout	2026-01-22T12:53:40.4254029Z ##[endgroup]
+windows (3.13)	Checkout	2026-01-22T12:53:40.5945034Z Syncing repository: crasofuentes-hub/hqcb-hllhc-hhh
+windows (3.13)	Checkout	2026-01-22T12:53:40.5947484Z ##[group]Getting Git version info
+windows (3.13)	Checkout	2026-01-22T12:53:40.5948273Z Working directory is 'D:\a\hqcb-hllhc-hhh\hqcb-hllhc-hhh'
+windows (3.13)	Checkout	2026-01-22T12:53:40.7453808Z [command]"C:\Program Files\Git\bin\git.exe" version
+windows (3.13)	Checkout	2026-01-22T12:53:41.1220765Z git version 2.52.0.windows.1
+windows (3.13)	Checkout	2026-01-22T12:53:41.1278925Z ##[endgroup]
+windows (3.13)	Checkout	2026-01-22T12:53:41.1302193Z Temporarily overriding HOME='D:\a\_temp\7e27bdba-b9ea-40ff-ae42-5b4778404d5e' before making global git config changes
+windows (3.13)	Checkout	2026-01-22T12:53:41.1306738Z Adding repository directory to the temporary git global config as a safe directory
+windows (3.13)	Checkout	2026-01-22T12:53:41.1314506Z [command]"C:\Program Files\Git\bin\git.exe" config --global --add safe.directory D:\a\hqcb-hllhc-hhh\hqcb-hllhc-hhh
+windows (3.13)	Checkout	2026-01-22T12:53:41.1865554Z Deleting the contents of 'D:\a\hqcb-hllhc-hhh\hqcb-hllhc-hhh'
+windows (3.13)	Checkout	2026-01-22T12:53:41.1874259Z ##[group]Initializing the repository
+windows (3.13)	Checkout	2026-01-22T12:53:41.1884030Z [command]"C:\Program Files\Git\bin\git.exe" init D:\a\hqcb-hllhc-hhh\hqcb-hllhc-hhh
+windows (3.13)	Checkout	2026-01-22T12:53:41.2611928Z Initialized empty Git repository in D:/a/hqcb-hllhc-hhh/hqcb-hllhc-hhh/.git/
+windows (3.13)	Checkout	2026-01-22T12:53:41.2657792Z [command]"C:\Program Files\Git\bin\git.exe" remote add origin https://github.com/crasofuentes-hub/hqcb-hllhc-hhh
+windows (3.13)	Checkout	2026-01-22T12:53:41.3122366Z ##[endgroup]
+windows (3.13)	Checkout	2026-01-22T12:53:41.3123811Z ##[group]Disabling automatic garbage collection
+windows (3.13)	Checkout	2026-01-22T12:53:41.3132725Z [command]"C:\Program Files\Git\bin\git.exe" config --local gc.auto 0
+windows (3.13)	Checkout	2026-01-22T12:53:41.3422698Z ##[endgroup]
+windows (3.13)	Checkout	2026-01-22T12:53:41.3424466Z ##[group]Setting up auth
+windows (3.13)	Checkout	2026-01-22T12:53:41.3426444Z [command]"C:\Program Files\Git\bin\git.exe" config --local --name-only --get-regexp core\.sshCommand
+windows (3.13)	Checkout	2026-01-22T12:53:41.3718523Z [command]"C:\Program Files\Git\bin\git.exe" submodule foreach --recursive "sh -c \"git config --local --name-only --get-regexp 'core\.sshCommand' && git config --local --unset-all 'core.sshCommand' || :\""
+windows (3.13)	Checkout	2026-01-22T12:53:42.6438171Z [command]"C:\Program Files\Git\bin\git.exe" config --local --name-only --get-regexp http\.https\:\/\/github\.com\/\.extraheader
+windows (3.13)	Checkout	2026-01-22T12:53:42.6726638Z [command]"C:\Program Files\Git\bin\git.exe" submodule foreach --recursive "sh -c \"git config --local --name-only --get-regexp 'http\.https\:\/\/github\.com\/\.extraheader' && git config --local --unset-all 'http.https://github.com/.extraheader' || :\""
+windows (3.13)	Checkout	2026-01-22T12:53:43.1880349Z [command]"C:\Program Files\Git\bin\git.exe" config --local --name-only --get-regexp ^includeIf\.gitdir:
+windows (3.13)	Checkout	2026-01-22T12:53:43.2173563Z [command]"C:\Program Files\Git\bin\git.exe" submodule foreach --recursive "git config --local --show-origin --name-only --get-regexp remote.origin.url"
+windows (3.13)	Checkout	2026-01-22T12:53:43.7409099Z [command]"C:\Program Files\Git\bin\git.exe" config --local http.https://github.com/.extraheader "AUTHORIZATION: basic ***"
+windows (3.13)	Checkout	2026-01-22T12:53:43.7707487Z ##[endgroup]
+windows (3.13)	Checkout	2026-01-22T12:53:43.7708875Z ##[group]Fetching the repository
+windows (3.13)	Checkout	2026-01-22T12:53:43.7723023Z [command]"C:\Program Files\Git\bin\git.exe" -c protocol.version=2 fetch --no-tags --prune --no-recurse-submodules --depth=1 origin +d040bf773f04155a134f8d43b450dadbacd93975:refs/remotes/origin/main
+windows (3.13)	Checkout	2026-01-22T12:53:44.5433429Z From https://github.com/crasofuentes-hub/hqcb-hllhc-hhh
+windows (3.13)	Checkout	2026-01-22T12:53:44.5434435Z  * [new ref]         d040bf773f04155a134f8d43b450dadbacd93975 -> origin/main
+windows (3.13)	Checkout	2026-01-22T12:53:44.5784615Z ##[endgroup]
+windows (3.13)	Checkout	2026-01-22T12:53:44.5785014Z ##[group]Determining the checkout info
+windows (3.13)	Checkout	2026-01-22T12:53:44.5788142Z ##[endgroup]
+windows (3.13)	Checkout	2026-01-22T12:53:44.5804210Z [command]"C:\Program Files\Git\bin\git.exe" sparse-checkout disable
+windows (3.13)	Checkout	2026-01-22T12:53:44.6225982Z [command]"C:\Program Files\Git\bin\git.exe" config --local --unset-all extensions.worktreeConfig
+windows (3.13)	Checkout	2026-01-22T12:53:44.6505235Z ##[group]Checking out the ref
+windows (3.13)	Checkout	2026-01-22T12:53:44.6515097Z [command]"C:\Program Files\Git\bin\git.exe" checkout --progress --force -B main refs/remotes/origin/main
+windows (3.13)	Checkout	2026-01-22T12:53:44.7212718Z branch 'main' set up to track 'origin/main'.
+windows (3.13)	Checkout	2026-01-22T12:53:44.7219606Z Switched to a new branch 'main'
+windows (3.13)	Checkout	2026-01-22T12:53:44.7258488Z ##[endgroup]
+windows (3.13)	Checkout	2026-01-22T12:53:44.7833177Z [command]"C:\Program Files\Git\bin\git.exe" log -1 --format=%H
+windows (3.13)	Checkout	2026-01-22T12:53:44.8126367Z d040bf773f04155a134f8d43b450dadbacd93975
+windows (3.13)	Set up Python	∩╗┐2026-01-22T12:53:44.8580124Z ##[group]Run actions/setup-python@v5
+windows (3.13)	Set up Python	2026-01-22T12:53:44.8580569Z with:
+windows (3.13)	Set up Python	2026-01-22T12:53:44.8580758Z   python-version: 3.13
+windows (3.13)	Set up Python	2026-01-22T12:53:44.8580981Z   check-latest: false
+windows (3.13)	Set up Python	2026-01-22T12:53:44.8581318Z   token: ***
+windows (3.13)	Set up Python	2026-01-22T12:53:44.8581496Z   update-environment: true
+windows (3.13)	Set up Python	2026-01-22T12:53:44.8581713Z   allow-prereleases: false
+windows (3.13)	Set up Python	2026-01-22T12:53:44.8581921Z   freethreaded: false
+windows (3.13)	Set up Python	2026-01-22T12:53:44.8582124Z ##[endgroup]
+windows (3.13)	Set up Python	2026-01-22T12:53:45.0821329Z ##[group]Installed versions
+windows (3.13)	Set up Python	2026-01-22T12:53:45.1028098Z Successfully set up CPython (3.13.11)
+windows (3.13)	Set up Python	2026-01-22T12:53:45.1029099Z ##[endgroup]
+windows (3.13)	Install project + dev deps	∩╗┐2026-01-22T12:53:45.1280673Z ##[group]Run python -m pip install -U pip
+windows (3.13)	Install project + dev deps	2026-01-22T12:53:45.1281096Z [36;1mpython -m pip install -U pip[0m
+windows (3.13)	Install project + dev deps	2026-01-22T12:53:45.1281376Z [36;1mpython -m pip install -e ".[dev]"[0m
+windows (3.13)	Install project + dev deps	2026-01-22T12:53:45.1281704Z [36;1mpython -m pip install pyyaml matplotlib numpy[0m
+windows (3.13)	Install project + dev deps	2026-01-22T12:53:45.1958685Z shell: C:\Program Files\PowerShell\7\pwsh.EXE -command ". '{0}'"
+windows (3.13)	Install project + dev deps	2026-01-22T12:53:45.1960005Z env:
+windows (3.13)	Install project + dev deps	2026-01-22T12:53:45.1960331Z   pythonLocation: C:\hostedtoolcache\windows\Python\3.13.11\x64
+windows (3.13)	Install project + dev deps	2026-01-22T12:53:45.1960897Z   PKG_CONFIG_PATH: C:\hostedtoolcache\windows\Python\3.13.11\x64/lib/pkgconfig
+windows (3.13)	Install project + dev deps	2026-01-22T12:53:45.1961437Z   Python_ROOT_DIR: C:\hostedtoolcache\windows\Python\3.13.11\x64
+windows (3.13)	Install project + dev deps	2026-01-22T12:53:45.1961900Z   Python2_ROOT_DIR: C:\hostedtoolcache\windows\Python\3.13.11\x64
+windows (3.13)	Install project + dev deps	2026-01-22T12:53:45.1962370Z   Python3_ROOT_DIR: C:\hostedtoolcache\windows\Python\3.13.11\x64
+windows (3.13)	Install project + dev deps	2026-01-22T12:53:45.1962726Z ##[endgroup]
+windows (3.13)	Install project + dev deps	2026-01-22T12:54:01.3322336Z Requirement already satisfied: pip in c:\hostedtoolcache\windows\python\3.13.11\x64\lib\site-packages (25.3)
+windows (3.13)	Install project + dev deps	2026-01-22T12:54:03.4536402Z Obtaining file:///D:/a/hqcb-hllhc-hhh/hqcb-hllhc-hhh
+windows (3.13)	Install project + dev deps	2026-01-22T12:54:03.4568316Z   Installing build dependencies: started
+windows (3.13)	Install project + dev deps	2026-01-22T12:54:06.4138203Z   Installing build dependencies: finished with status 'done'
+windows (3.13)	Install project + dev deps	2026-01-22T12:54:06.4154451Z   Checking if build backend supports build_editable: started
+windows (3.13)	Install project + dev deps	2026-01-22T12:54:06.9486657Z   Checking if build backend supports build_editable: finished with status 'done'
+windows (3.13)	Install project + dev deps	2026-01-22T12:54:06.9511088Z   Getting requirements to build editable: started
+windows (3.13)	Install project + dev deps	2026-01-22T12:54:07.4696748Z   Getting requirements to build editable: finished with status 'done'
+windows (3.13)	Install project + dev deps	2026-01-22T12:54:07.4738714Z   Preparing editable metadata (pyproject.toml): started
+windows (3.13)	Install project + dev deps	2026-01-22T12:54:07.7852815Z   Preparing editable metadata (pyproject.toml): finished with status 'done'
+windows (3.13)	Install project + dev deps	2026-01-22T12:54:08.4029215Z Collecting numpy>=1.24 (from hqcb-hhh==0.1.0)
+windows (3.13)	Install project + dev deps	2026-01-22T12:54:08.6555761Z   Downloading numpy-2.4.1-cp313-cp313-win_amd64.whl.metadata (6.6 kB)
+windows (3.13)	Install project + dev deps	2026-01-22T12:54:08.8338770Z Collecting scipy>=1.10 (from hqcb-hhh==0.1.0)
+windows (3.13)	Install project + dev deps	2026-01-22T12:54:08.8395828Z   Downloading scipy-1.17.0-cp313-cp313-win_amd64.whl.metadata (60 kB)
+windows (3.13)	Install project + dev deps	2026-01-22T12:54:09.0294127Z Collecting pyyaml>=6.0 (from hqcb-hhh==0.1.0)
+windows (3.13)	Install project + dev deps	2026-01-22T12:54:09.0365292Z   Downloading pyyaml-6.0.3-cp313-cp313-win_amd64.whl.metadata (2.4 kB)
+windows (3.13)	Install project + dev deps	2026-01-22T12:54:09.2079047Z Collecting matplotlib>=3.7 (from hqcb-hhh==0.1.0)
+windows (3.13)	Install project + dev deps	2026-01-22T12:54:09.2144556Z   Downloading matplotlib-3.10.8-cp313-cp313-win_amd64.whl.metadata (52 kB)
+windows (3.13)	Install project + dev deps	2026-01-22T12:54:09.3022330Z Collecting pytest>=8.0 (from hqcb-hhh==0.1.0)
+windows (3.13)	Install project + dev deps	2026-01-22T12:54:09.3070516Z   Downloading pytest-9.0.2-py3-none-any.whl.metadata (7.6 kB)
+windows (3.13)	Install project + dev deps	2026-01-22T12:54:09.7097866Z Collecting ruff>=0.6 (from hqcb-hhh==0.1.0)
+windows (3.13)	Install project + dev deps	2026-01-22T12:54:09.7169355Z   Downloading ruff-0.14.13-py3-none-win_amd64.whl.metadata (26 kB)
+windows (3.13)	Install project + dev deps	2026-01-22T12:54:09.8547144Z Collecting mypy>=1.8 (from hqcb-hhh==0.1.0)
+windows (3.13)	Install project + dev deps	2026-01-22T12:54:09.8641258Z   Downloading mypy-1.19.1-cp313-cp313-win_amd64.whl.metadata (2.3 kB)
+windows (3.13)	Install project + dev deps	2026-01-22T12:54:09.9590920Z Collecting contourpy>=1.0.1 (from matplotlib>=3.7->hqcb-hhh==0.1.0)
+windows (3.13)	Install project + dev deps	2026-01-22T12:54:09.9649785Z   Downloading contourpy-1.3.3-cp313-cp313-win_amd64.whl.metadata (5.5 kB)
+windows (3.13)	Install project + dev deps	2026-01-22T12:54:10.0138824Z Collecting cycler>=0.10 (from matplotlib>=3.7->hqcb-hhh==0.1.0)
+windows (3.13)	Install project + dev deps	2026-01-22T12:54:10.0185413Z   Downloading cycler-0.12.1-py3-none-any.whl.metadata (3.8 kB)
+windows (3.13)	Install project + dev deps	2026-01-22T12:54:10.2147342Z Collecting fonttools>=4.22.0 (from matplotlib>=3.7->hqcb-hhh==0.1.0)
+windows (3.13)	Install project + dev deps	2026-01-22T12:54:10.2209225Z   Downloading fonttools-4.61.1-cp313-cp313-win_amd64.whl.metadata (116 kB)
+windows (3.13)	Install project + dev deps	2026-01-22T12:54:10.3325186Z Collecting kiwisolver>=1.3.1 (from matplotlib>=3.7->hqcb-hhh==0.1.0)
+windows (3.13)	Install project + dev deps	2026-01-22T12:54:10.3383897Z   Downloading kiwisolver-1.4.9-cp313-cp313-win_amd64.whl.metadata (6.4 kB)
+windows (3.13)	Install project + dev deps	2026-01-22T12:54:10.4061507Z Collecting packaging>=20.0 (from matplotlib>=3.7->hqcb-hhh==0.1.0)
+windows (3.13)	Install project + dev deps	2026-01-22T12:54:10.4083991Z   Using cached packaging-26.0-py3-none-any.whl.metadata (3.3 kB)
+windows (3.13)	Install project + dev deps	2026-01-22T12:54:10.6217989Z Collecting pillow>=8 (from matplotlib>=3.7->hqcb-hhh==0.1.0)
+windows (3.13)	Install project + dev deps	2026-01-22T12:54:10.6273534Z   Downloading pillow-12.1.0-cp313-cp313-win_amd64.whl.metadata (9.0 kB)
+windows (3.13)	Install project + dev deps	2026-01-22T12:54:10.7102421Z Collecting pyparsing>=3 (from matplotlib>=3.7->hqcb-hhh==0.1.0)
+windows (3.13)	Install project + dev deps	2026-01-22T12:54:10.7151699Z   Downloading pyparsing-3.3.2-py3-none-any.whl.metadata (5.8 kB)
+windows (3.13)	Install project + dev deps	2026-01-22T12:54:10.7682626Z Collecting python-dateutil>=2.7 (from matplotlib>=3.7->hqcb-hhh==0.1.0)
+windows (3.13)	Install project + dev deps	2026-01-22T12:54:10.7731677Z   Downloading python_dateutil-2.9.0.post0-py2.py3-none-any.whl.metadata (8.4 kB)
+windows (3.13)	Install project + dev deps	2026-01-22T12:54:10.8335766Z Collecting typing_extensions>=4.6.0 (from mypy>=1.8->hqcb-hhh==0.1.0)
+windows (3.13)	Install project + dev deps	2026-01-22T12:54:10.8382340Z   Downloading typing_extensions-4.15.0-py3-none-any.whl.metadata (3.3 kB)
+windows (3.13)	Install project + dev deps	2026-01-22T12:54:10.8834096Z Collecting mypy_extensions>=1.0.0 (from mypy>=1.8->hqcb-hhh==0.1.0)
+windows (3.13)	Install project + dev deps	2026-01-22T12:54:10.8897958Z   Downloading mypy_extensions-1.1.0-py3-none-any.whl.metadata (1.1 kB)
+windows (3.13)	Install project + dev deps	2026-01-22T12:54:10.9403675Z Collecting pathspec>=0.9.0 (from mypy>=1.8->hqcb-hhh==0.1.0)
+windows (3.13)	Install project + dev deps	2026-01-22T12:54:10.9452979Z   Downloading pathspec-1.0.3-py3-none-any.whl.metadata (13 kB)
+windows (3.13)	Install project + dev deps	2026-01-22T12:54:11.0799126Z Collecting librt>=0.6.2 (from mypy>=1.8->hqcb-hhh==0.1.0)
+windows (3.13)	Install project + dev deps	2026-01-22T12:54:11.0856073Z   Downloading librt-0.7.8-cp313-cp313-win_amd64.whl.metadata (1.4 kB)
+windows (3.13)	Install project + dev deps	2026-01-22T12:54:11.1420922Z Collecting colorama>=0.4 (from pytest>=8.0->hqcb-hhh==0.1.0)
+windows (3.13)	Install project + dev deps	2026-01-22T12:54:11.1465378Z   Downloading colorama-0.4.6-py2.py3-none-any.whl.metadata (17 kB)
+windows (3.13)	Install project + dev deps	2026-01-22T12:54:11.2077268Z Collecting iniconfig>=1.0.1 (from pytest>=8.0->hqcb-hhh==0.1.0)
+windows (3.13)	Install project + dev deps	2026-01-22T12:54:11.2123371Z   Downloading iniconfig-2.3.0-py3-none-any.whl.metadata (2.5 kB)
+windows (3.13)	Install project + dev deps	2026-01-22T12:54:11.2601709Z Collecting pluggy<2,>=1.5 (from pytest>=8.0->hqcb-hhh==0.1.0)
+windows (3.13)	Install project + dev deps	2026-01-22T12:54:11.2843855Z   Downloading pluggy-1.6.0-py3-none-any.whl.metadata (4.8 kB)
+windows (3.13)	Install project + dev deps	2026-01-22T12:54:11.3387674Z Collecting pygments>=2.7.2 (from pytest>=8.0->hqcb-hhh==0.1.0)
+windows (3.13)	Install project + dev deps	2026-01-22T12:54:11.3433362Z   Downloading pygments-2.19.2-py3-none-any.whl.metadata (2.5 kB)
+windows (3.13)	Install project + dev deps	2026-01-22T12:54:11.3943841Z Collecting six>=1.5 (from python-dateutil>=2.7->matplotlib>=3.7->hqcb-hhh==0.1.0)
+windows (3.13)	Install project + dev deps	2026-01-22T12:54:11.3997488Z   Downloading six-1.17.0-py2.py3-none-any.whl.metadata (1.7 kB)
+windows (3.13)	Install project + dev deps	2026-01-22T12:54:11.4443441Z Downloading matplotlib-3.10.8-cp313-cp313-win_amd64.whl (8.1 MB)
+windows (3.13)	Install project + dev deps	2026-01-22T12:54:11.5178225Z    ---------------------------------------- 8.1/8.1 MB 115.2 MB/s  0:00:00
+windows (3.13)	Install project + dev deps	2026-01-22T12:54:11.5265379Z Downloading contourpy-1.3.3-cp313-cp313-win_amd64.whl (226 kB)
+windows (3.13)	Install project + dev deps	2026-01-22T12:54:11.5497435Z Downloading cycler-0.12.1-py3-none-any.whl (8.3 kB)
+windows (3.13)	Install project + dev deps	2026-01-22T12:54:11.5727477Z Downloading fonttools-4.61.1-cp313-cp313-win_amd64.whl (2.3 MB)
+windows (3.13)	Install project + dev deps	2026-01-22T12:54:11.6127018Z    ---------------------------------------- 2.3/2.3 MB 56.3 MB/s  0:00:00
+windows (3.13)	Install project + dev deps	2026-01-22T12:54:11.6177734Z Downloading kiwisolver-1.4.9-cp313-cp313-win_amd64.whl (73 kB)
+windows (3.13)	Install project + dev deps	2026-01-22T12:54:11.6403801Z Downloading mypy-1.19.1-cp313-cp313-win_amd64.whl (10.1 MB)
+windows (3.13)	Install project + dev deps	2026-01-22T12:54:11.7465382Z    ---------------------------------------- 10.1/10.1 MB 96.1 MB/s  0:00:00
+windows (3.13)	Install project + dev deps	2026-01-22T12:54:11.7525220Z Downloading librt-0.7.8-cp313-cp313-win_amd64.whl (50 kB)
+windows (3.13)	Install project + dev deps	2026-01-22T12:54:11.7766453Z Downloading mypy_extensions-1.1.0-py3-none-any.whl (5.0 kB)
+windows (3.13)	Install project + dev deps	2026-01-22T12:54:11.8002773Z Downloading numpy-2.4.1-cp313-cp313-win_amd64.whl (12.3 MB)
+windows (3.13)	Install project + dev deps	2026-01-22T12:54:11.8992534Z    ---------------------------------------- 12.3/12.3 MB 125.7 MB/s  0:00:00
+windows (3.13)	Install project + dev deps	2026-01-22T12:54:11.9010257Z Using cached packaging-26.0-py3-none-any.whl (74 kB)
+windows (3.13)	Install project + dev deps	2026-01-22T12:54:11.9069597Z Downloading pathspec-1.0.3-py3-none-any.whl (55 kB)
+windows (3.13)	Install project + dev deps	2026-01-22T12:54:11.9323691Z Downloading pillow-12.1.0-cp313-cp313-win_amd64.whl (7.0 MB)
+windows (3.13)	Install project + dev deps	2026-01-22T12:54:12.0086681Z    ---------------------------------------- 7.0/7.0 MB 92.4 MB/s  0:00:00
+windows (3.13)	Install project + dev deps	2026-01-22T12:54:12.0133703Z Downloading pyparsing-3.3.2-py3-none-any.whl (122 kB)
+windows (3.13)	Install project + dev deps	2026-01-22T12:54:12.0449312Z Downloading pytest-9.0.2-py3-none-any.whl (374 kB)
+windows (3.13)	Install project + dev deps	2026-01-22T12:54:12.0772372Z Downloading pluggy-1.6.0-py3-none-any.whl (20 kB)
+windows (3.13)	Install project + dev deps	2026-01-22T12:54:12.0996085Z Downloading colorama-0.4.6-py2.py3-none-any.whl (25 kB)
+windows (3.13)	Install project + dev deps	2026-01-22T12:54:12.1237385Z Downloading iniconfig-2.3.0-py3-none-any.whl (7.5 kB)
+windows (3.13)	Install project + dev deps	2026-01-22T12:54:12.1447303Z Downloading pygments-2.19.2-py3-none-any.whl (1.2 MB)
+windows (3.13)	Install project + dev deps	2026-01-22T12:54:12.1866579Z    ---------------------------------------- 1.2/1.2 MB 24.7 MB/s  0:00:00
+windows (3.13)	Install project + dev deps	2026-01-22T12:54:12.1912427Z Downloading python_dateutil-2.9.0.post0-py2.py3-none-any.whl (229 kB)
+windows (3.13)	Install project + dev deps	2026-01-22T12:54:12.2157043Z Downloading pyyaml-6.0.3-cp313-cp313-win_amd64.whl (154 kB)
+windows (3.13)	Install project + dev deps	2026-01-22T12:54:12.2496662Z Downloading ruff-0.14.13-py3-none-win_amd64.whl (14.1 MB)
+windows (3.13)	Install project + dev deps	2026-01-22T12:54:12.3972450Z    ---------------------------------------- 14.1/14.1 MB 95.8 MB/s  0:00:00
+windows (3.13)	Install project + dev deps	2026-01-22T12:54:12.4042400Z Downloading scipy-1.17.0-cp313-cp313-win_amd64.whl (36.3 MB)
+windows (3.13)	Install project + dev deps	2026-01-22T12:54:12.9533259Z    ---------------------------------------- 36.3/36.3 MB 66.0 MB/s  0:00:00
+windows (3.13)	Install project + dev deps	2026-01-22T12:54:12.9582612Z Downloading six-1.17.0-py2.py3-none-any.whl (11 kB)
+windows (3.13)	Install project + dev deps	2026-01-22T12:54:12.9907644Z Downloading typing_extensions-4.15.0-py3-none-any.whl (44 kB)
+windows (3.13)	Install project + dev deps	2026-01-22T12:54:13.1686400Z Building wheels for collected packages: hqcb-hhh
+windows (3.13)	Install project + dev deps	2026-01-22T12:54:13.1721533Z   Building editable for hqcb-hhh (pyproject.toml): started
+windows (3.13)	Install project + dev deps	2026-01-22T12:54:13.5244212Z   Building editable for hqcb-hhh (pyproject.toml): finished with status 'done'
+windows (3.13)	Install project + dev deps	2026-01-22T12:54:13.5294794Z   Created wheel for hqcb-hhh: filename=hqcb_hhh-0.1.0-0.editable-py3-none-any.whl size=15205 sha256=c4643e9c9010dbe5626db508fd8a28f4696db2ac14c48a09f0237531aa7946f5
+windows (3.13)	Install project + dev deps	2026-01-22T12:54:13.5296782Z   Stored in directory: C:\Users\runneradmin\AppData\Local\Temp\pip-ephem-wheel-cache-93g7k_o2\wheels\3b\7d\c2\c7e5c7ea663ddf67979b750560b4fe38ab4e6839c82dfa6035
+windows (3.13)	Install project + dev deps	2026-01-22T12:54:13.5326021Z Successfully built hqcb-hhh
+windows (3.13)	Install project + dev deps	2026-01-22T12:54:13.6159257Z Installing collected packages: typing_extensions, six, ruff, pyyaml, pyparsing, pygments, pluggy, pillow, pathspec, packaging, numpy, mypy_extensions, librt, kiwisolver, iniconfig, fonttools, cycler, colorama, scipy, python-dateutil, pytest, mypy, contourpy, matplotlib, hqcb-hhh
+windows (3.13)	Install project + dev deps	2026-01-22T12:54:38.6060743Z 
+windows (3.13)	Install project + dev deps	2026-01-22T12:54:38.6100238Z Successfully installed colorama-0.4.6 contourpy-1.3.3 cycler-0.12.1 fonttools-4.61.1 hqcb-hhh-0.1.0 iniconfig-2.3.0 kiwisolver-1.4.9 librt-0.7.8 matplotlib-3.10.8 mypy-1.19.1 mypy_extensions-1.1.0 numpy-2.4.1 packaging-26.0 pathspec-1.0.3 pillow-12.1.0 pluggy-1.6.0 pygments-2.19.2 pyparsing-3.3.2 pytest-9.0.2 python-dateutil-2.9.0.post0 pyyaml-6.0.3 ruff-0.14.13 scipy-1.17.0 six-1.17.0 typing_extensions-4.15.0
+windows (3.13)	Install project + dev deps	2026-01-22T12:54:40.1459047Z Requirement already satisfied: pyyaml in c:\hostedtoolcache\windows\python\3.13.11\x64\lib\site-packages (6.0.3)
+windows (3.13)	Install project + dev deps	2026-01-22T12:54:40.1463245Z Requirement already satisfied: matplotlib in c:\hostedtoolcache\windows\python\3.13.11\x64\lib\site-packages (3.10.8)
+windows (3.13)	Install project + dev deps	2026-01-22T12:54:40.1468089Z Requirement already satisfied: numpy in c:\hostedtoolcache\windows\python\3.13.11\x64\lib\site-packages (2.4.1)
+windows (3.13)	Install project + dev deps	2026-01-22T12:54:40.1520179Z Requirement already satisfied: contourpy>=1.0.1 in c:\hostedtoolcache\windows\python\3.13.11\x64\lib\site-packages (from matplotlib) (1.3.3)
+windows (3.13)	Install project + dev deps	2026-01-22T12:54:40.1526077Z Requirement already satisfied: cycler>=0.10 in c:\hostedtoolcache\windows\python\3.13.11\x64\lib\site-packages (from matplotlib) (0.12.1)
+windows (3.13)	Install project + dev deps	2026-01-22T12:54:40.1531380Z Requirement already satisfied: fonttools>=4.22.0 in c:\hostedtoolcache\windows\python\3.13.11\x64\lib\site-packages (from matplotlib) (4.61.1)
+windows (3.13)	Install project + dev deps	2026-01-22T12:54:40.1536445Z Requirement already satisfied: kiwisolver>=1.3.1 in c:\hostedtoolcache\windows\python\3.13.11\x64\lib\site-packages (from matplotlib) (1.4.9)
+windows (3.13)	Install project + dev deps	2026-01-22T12:54:40.1544848Z Requirement already satisfied: packaging>=20.0 in c:\hostedtoolcache\windows\python\3.13.11\x64\lib\site-packages (from matplotlib) (26.0)
+windows (3.13)	Install project + dev deps	2026-01-22T12:54:40.1550601Z Requirement already satisfied: pillow>=8 in c:\hostedtoolcache\windows\python\3.13.11\x64\lib\site-packages (from matplotlib) (12.1.0)
+windows (3.13)	Install project + dev deps	2026-01-22T12:54:40.1555612Z Requirement already satisfied: pyparsing>=3 in c:\hostedtoolcache\windows\python\3.13.11\x64\lib\site-packages (from matplotlib) (3.3.2)
+windows (3.13)	Install project + dev deps	2026-01-22T12:54:40.1560732Z Requirement already satisfied: python-dateutil>=2.7 in c:\hostedtoolcache\windows\python\3.13.11\x64\lib\site-packages (from matplotlib) (2.9.0.post0)
+windows (3.13)	Install project + dev deps	2026-01-22T12:54:40.1722843Z Requirement already satisfied: six>=1.5 in c:\hostedtoolcache\windows\python\3.13.11\x64\lib\site-packages (from python-dateutil>=2.7->matplotlib) (1.17.0)
+windows (3.13)	Run unit tests	∩╗┐2026-01-22T12:54:40.8679182Z ##[group]Run python -m pytest -q
+windows (3.13)	Run unit tests	2026-01-22T12:54:40.8679527Z [36;1mpython -m pytest -q[0m
+windows (3.13)	Run unit tests	2026-01-22T12:54:40.8746430Z shell: C:\Program Files\PowerShell\7\pwsh.EXE -command ". '{0}'"
+windows (3.13)	Run unit tests	2026-01-22T12:54:40.8746841Z env:
+windows (3.13)	Run unit tests	2026-01-22T12:54:40.8747092Z   pythonLocation: C:\hostedtoolcache\windows\Python\3.13.11\x64
+windows (3.13)	Run unit tests	2026-01-22T12:54:40.8747519Z   PKG_CONFIG_PATH: C:\hostedtoolcache\windows\Python\3.13.11\x64/lib/pkgconfig
+windows (3.13)	Run unit tests	2026-01-22T12:54:40.8747956Z   Python_ROOT_DIR: C:\hostedtoolcache\windows\Python\3.13.11\x64
+windows (3.13)	Run unit tests	2026-01-22T12:54:40.8748338Z   Python2_ROOT_DIR: C:\hostedtoolcache\windows\Python\3.13.11\x64
+windows (3.13)	Run unit tests	2026-01-22T12:54:40.8748708Z   Python3_ROOT_DIR: C:\hostedtoolcache\windows\Python\3.13.11\x64
+windows (3.13)	Run unit tests	2026-01-22T12:54:40.8748998Z ##[endgroup]
+windows (3.13)	Run unit tests	2026-01-22T12:54:42.0137857Z .....                                                                    [100%]
+windows (3.13)	Run HQCB-B demo (generate figures)	∩╗┐2026-01-22T12:54:42.1771811Z ##[group]Run [Console]::OutputEncoding = [System.Text.Encoding]::UTF8
+windows (3.13)	Run HQCB-B demo (generate figures)	2026-01-22T12:54:42.1772361Z [36;1m[Console]::OutputEncoding = [System.Text.Encoding]::UTF8[0m
+windows (3.13)	Run HQCB-B demo (generate figures)	2026-01-22T12:54:42.1772835Z [36;1mpython scripts\hqcb_b_demo.py --config data\cosmology\hqcb_b_toy.yaml[0m
+windows (3.13)	Run HQCB-B demo (generate figures)	2026-01-22T12:54:42.1840769Z shell: C:\Program Files\PowerShell\7\pwsh.EXE -command ". '{0}'"
+windows (3.13)	Run HQCB-B demo (generate figures)	2026-01-22T12:54:42.1841090Z env:
+windows (3.13)	Run HQCB-B demo (generate figures)	2026-01-22T12:54:42.1841325Z   pythonLocation: C:\hostedtoolcache\windows\Python\3.13.11\x64
+windows (3.13)	Run HQCB-B demo (generate figures)	2026-01-22T12:54:42.1841771Z   PKG_CONFIG_PATH: C:\hostedtoolcache\windows\Python\3.13.11\x64/lib/pkgconfig
+windows (3.13)	Run HQCB-B demo (generate figures)	2026-01-22T12:54:42.1842188Z   Python_ROOT_DIR: C:\hostedtoolcache\windows\Python\3.13.11\x64
+windows (3.13)	Run HQCB-B demo (generate figures)	2026-01-22T12:54:42.1842560Z   Python2_ROOT_DIR: C:\hostedtoolcache\windows\Python\3.13.11\x64
+windows (3.13)	Run HQCB-B demo (generate figures)	2026-01-22T12:54:42.1842923Z   Python3_ROOT_DIR: C:\hostedtoolcache\windows\Python\3.13.11\x64
+windows (3.13)	Run HQCB-B demo (generate figures)	2026-01-22T12:54:42.1843227Z   PYTHONUTF8: 1
+windows (3.13)	Run HQCB-B demo (generate figures)	2026-01-22T12:54:42.1843402Z   PYTHONIOENCODING: utf-8
+windows (3.13)	Run HQCB-B demo (generate figures)	2026-01-22T12:54:42.1843617Z ##[endgroup]
+windows (3.13)	Run HQCB-B demo (generate figures)	2026-01-22T12:54:47.8216795Z Matplotlib is building the font cache; this may take a moment.
+windows (3.13)	Run HQCB-B demo (generate figures)	2026-01-22T12:54:54.0175666Z === HQCB-B toy: calibration-driven H0 tension ===
+windows (3.13)	Run HQCB-B demo (generate figures)	2026-01-22T12:54:54.0176299Z Author: Oscar Fuentes Fern├índez
+windows (3.13)	Run HQCB-B demo (generate figures)	2026-01-22T12:54:54.0176565Z Config: data\cosmology\hqcb_b_toy.yaml
+windows (3.13)	Run HQCB-B demo (generate figures)	2026-01-22T12:54:54.0177040Z Targets: H0_local=73.000, H0_early_target=67.400
+windows (3.13)	Run HQCB-B demo (generate figures)	2026-01-22T12:54:54.0177385Z Solved alpha=-4.558236e-02  (v_eff ~ (1+z)^alpha)
+windows (3.13)	Run HQCB-B demo (generate figures)	2026-01-22T12:54:54.0177673Z p_sensitivity=0.2500
+windows (3.13)	Run HQCB-B demo (generate figures)	2026-01-22T12:54:54.0177889Z v_ratio(z_rec)=(1+z_rec)^alpha = 0.726688
+windows (3.13)	Run HQCB-B demo (generate figures)	2026-01-22T12:54:54.0178167Z rd_true(z_rec) = 135.7233 Mpc  (rd0=147.0000)
+windows (3.13)	Run HQCB-B demo (generate figures)	2026-01-22T12:54:54.0178501Z H0_early_inferred ~ H0_local*(rd_true/rd0) = 67.400 km/s/Mpc
+windows (3.13)	Run HQCB-B demo (generate figures)	2026-01-22T12:54:54.0178808Z Saved figures:
+windows (3.13)	Run HQCB-B demo (generate figures)	2026-01-22T12:54:54.0179000Z - docs/figures/hqcb_b_v_ratio.png
+windows (3.13)	Run HQCB-B demo (generate figures)	2026-01-22T12:54:54.0179299Z - docs/figures/hqcb_b_H0_ratio.png
+windows (3.13)	Verify HQCB-B figures exist	∩╗┐2026-01-22T12:54:54.2736197Z ##[group]Run $f1 = "docs/figures/hqcb_b_v_ratio.png"
+windows (3.13)	Verify HQCB-B figures exist	2026-01-22T12:54:54.2736666Z [36;1m$f1 = "docs/figures/hqcb_b_v_ratio.png"[0m
+windows (3.13)	Verify HQCB-B figures exist	2026-01-22T12:54:54.2736974Z [36;1m$f2 = "docs/figures/hqcb_b_H0_ratio.png"[0m
+windows (3.13)	Verify HQCB-B figures exist	2026-01-22T12:54:54.2737329Z [36;1mif (-not (Test-Path $f1)) { throw "Missing figure: $f1" }[0m
+windows (3.13)	Verify HQCB-B figures exist	2026-01-22T12:54:54.2737915Z [36;1mif (-not (Test-Path $f2)) { throw "Missing figure: $f2" }[0m
+windows (3.13)	Verify HQCB-B figures exist	2026-01-22T12:54:54.2738261Z [36;1mWrite-Host "OK: HQCB-B figures generated."[0m
+windows (3.13)	Verify HQCB-B figures exist	2026-01-22T12:54:54.2806300Z shell: C:\Program Files\PowerShell\7\pwsh.EXE -command ". '{0}'"
+windows (3.13)	Verify HQCB-B figures exist	2026-01-22T12:54:54.2806624Z env:
+windows (3.13)	Verify HQCB-B figures exist	2026-01-22T12:54:54.2806857Z   pythonLocation: C:\hostedtoolcache\windows\Python\3.13.11\x64
+windows (3.13)	Verify HQCB-B figures exist	2026-01-22T12:54:54.2807296Z   PKG_CONFIG_PATH: C:\hostedtoolcache\windows\Python\3.13.11\x64/lib/pkgconfig
+windows (3.13)	Verify HQCB-B figures exist	2026-01-22T12:54:54.2807736Z   Python_ROOT_DIR: C:\hostedtoolcache\windows\Python\3.13.11\x64
+windows (3.13)	Verify HQCB-B figures exist	2026-01-22T12:54:54.2808301Z   Python2_ROOT_DIR: C:\hostedtoolcache\windows\Python\3.13.11\x64
+windows (3.13)	Verify HQCB-B figures exist	2026-01-22T12:54:54.2808706Z   Python3_ROOT_DIR: C:\hostedtoolcache\windows\Python\3.13.11\x64
+windows (3.13)	Verify HQCB-B figures exist	2026-01-22T12:54:54.2809002Z ##[endgroup]
+windows (3.13)	Verify HQCB-B figures exist	2026-01-22T12:54:54.7219379Z OK: HQCB-B figures generated.
+windows (3.13)	Post Set up Python	∩╗┐2026-01-22T12:54:54.7889607Z Post job cleanup.
+windows (3.13)	Post Checkout	∩╗┐2026-01-22T12:54:55.0174316Z Post job cleanup.
+windows (3.13)	Post Checkout	2026-01-22T12:54:55.2544222Z [command]"C:\Program Files\Git\bin\git.exe" version
+windows (3.13)	Post Checkout	2026-01-22T12:54:55.2843864Z git version 2.52.0.windows.1
+windows (3.13)	Post Checkout	2026-01-22T12:54:55.2923735Z Temporarily overriding HOME='D:\a\_temp\1db773b5-6562-4b73-a7ef-dd8404e4113d' before making global git config changes
+windows (3.13)	Post Checkout	2026-01-22T12:54:55.2924937Z Adding repository directory to the temporary git global config as a safe directory
+windows (3.13)	Post Checkout	2026-01-22T12:54:55.2935774Z [command]"C:\Program Files\Git\bin\git.exe" config --global --add safe.directory D:\a\hqcb-hllhc-hhh\hqcb-hllhc-hhh
+windows (3.13)	Post Checkout	2026-01-22T12:54:55.3276400Z [command]"C:\Program Files\Git\bin\git.exe" config --local --name-only --get-regexp core\.sshCommand
+windows (3.13)	Post Checkout	2026-01-22T12:54:55.3586863Z [command]"C:\Program Files\Git\bin\git.exe" submodule foreach --recursive "sh -c \"git config --local --name-only --get-regexp 'core\.sshCommand' && git config --local --unset-all 'core.sshCommand' || :\""
+windows (3.13)	Post Checkout	2026-01-22T12:54:55.8951555Z [command]"C:\Program Files\Git\bin\git.exe" config --local --name-only --get-regexp http\.https\:\/\/github\.com\/\.extraheader
+windows (3.13)	Post Checkout	2026-01-22T12:54:55.9202673Z http.https://github.com/.extraheader
+windows (3.13)	Post Checkout	2026-01-22T12:54:55.9248445Z [command]"C:\Program Files\Git\bin\git.exe" config --local --unset-all http.https://github.com/.extraheader
+windows (3.13)	Post Checkout	2026-01-22T12:54:55.9532782Z [command]"C:\Program Files\Git\bin\git.exe" submodule foreach --recursive "sh -c \"git config --local --name-only --get-regexp 'http\.https\:\/\/github\.com\/\.extraheader' && git config --local --unset-all 'http.https://github.com/.extraheader' || :\""
+windows (3.13)	Post Checkout	2026-01-22T12:54:56.4644678Z [command]"C:\Program Files\Git\bin\git.exe" config --local --name-only --get-regexp ^includeIf\.gitdir:
+windows (3.13)	Post Checkout	2026-01-22T12:54:56.4941668Z [command]"C:\Program Files\Git\bin\git.exe" submodule foreach --recursive "git config --local --show-origin --name-only --get-regexp remote.origin.url"
+windows (3.13)	Complete job	∩╗┐2026-01-22T12:54:57.0024809Z Cleaning up orphan processes
