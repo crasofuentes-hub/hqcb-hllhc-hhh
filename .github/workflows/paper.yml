@@ -1,0 +1,23 @@
+name: Paper (PDF build)
+
+on:
+  push:
+  pull_request:
+
+jobs:
+  build_pdf:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Build PDF (latex)
+        uses: xu-cheng/latex-action@v3
+        with:
+          working_directory: paper
+          root_file: paper.tex
+
+      - name: Upload PDF artifact
+        uses: actions/upload-artifact@v4
+        with:
+          name: HQCB-paper-pdf
+          path: paper/paper.pdf

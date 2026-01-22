@@ -1,0 +1,47 @@
+% Copyright (c) 2026 Oscar Fuentes Fernandez
+% SPDX-License-Identifier: AGPL-3.0-or-later
+\documentclass[11pt]{article}
+\usepackage[margin=1in]{geometry}
+\usepackage[T1]{fontenc}
+\usepackage[utf8]{inputenc}
+\usepackage{amsmath,amssymb}
+\usepackage{graphicx}
+\usepackage{hyperref}
+\usepackage{microtype}
+
+\title{HQCB: Higgs-Quantum Cosmological Bootstrap}
+\author{Oscar Fuentes Fernandez}
+\date{2026}
+
+\begin{document}
+\maketitle
+
+\begin{abstract}
+We present the HQCB hypothesis: a self-consistent bootstrap linking an evolving effective Higgs vacuum expectation value to cosmological calibration and expansion-rate inference. We provide a minimal effective action, field equations, an LQG/LQC-motivated discretization bridge at the level of effective operators, and a reproducible inference pipeline with uncertainty propagation and model comparison.
+\end{abstract}
+
+\section{Motivation and Core Postulates}
+\input{sections/01_motivation.tex}
+
+\section{Effective Action and Field Equations}
+\input{sections/02_action_eoms.tex}
+
+\section{LQG/LQC Bridge: Discrete Graph and Semiclassical Limit}
+\input{sections/03_lqg_bridge.tex}
+
+\section{Bootstrap Closure and the Lambda Scaling Ansatz}
+\input{sections/04_bootstrap_lambda.tex}
+
+\section{Inference Pipeline and Model Comparison}
+\input{sections/05_inference.tex}
+
+\section{Results: Toy Calibration and Falsifiable Signatures}
+\input{sections/06_results.tex}
+
+\section{Discussion and Roadmap to Full-Rigour Derivation}
+\input{sections/07_discussion.tex}
+
+\bibliographystyle{unsrt}
+\bibliography{refs}
+
+\end{document}

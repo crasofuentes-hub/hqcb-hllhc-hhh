@@ -1,0 +1,9 @@
+cff-version: 1.2.0
+message: "If you use this software, please cite it as below."
+title: "HQCB-HL-LHC-HHH: Higgs-Quantum Cosmological Bootstrap (HQCB) tools"
+authors:
+  - family-names: "Fuentes Fernandez"
+    given-names: "Oscar"
+version: "0.1.0"
+date-released: "2026-01-22"
+license: "AGPL-3.0-or-later"
