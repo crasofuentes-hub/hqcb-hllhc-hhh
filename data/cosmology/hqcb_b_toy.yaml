@@ -1,0 +1,16 @@
+# HQCB-B toy config (calibration-driven H0 tension)
+# Author: Oscar Fuentes Fernández (2026)
+model:
+  v0_gev: 246.0
+  z_rec: 1100.0
+  rd0_mpc: 147.0
+  p_sensitivity: 0.25     # r_d ~ (v_eff/v0)^p  (toy; adjust as needed)
+targets:
+  H0_local: 73.0          # km/s/Mpc
+  H0_early_target: 67.4   # km/s/Mpc
+scan:
+  z_max: 3.0
+  n_z: 200
+output:
+  figures_dir: "docs/figures"
+  basename: "hqcb_b"
