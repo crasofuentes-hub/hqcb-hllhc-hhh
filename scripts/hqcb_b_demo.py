@@ -1,4 +1,4 @@
-﻿# Copyright (c) 2026 Oscar Fuentes Fernández
+# Copyright (c) 2026 Oscar Fuentes Fernández
 # SPDX-License-Identifier: AGPL-3.0-or-later
 
 from __future__ import annotations
@@ -71,7 +71,7 @@ def rd_true(v_ratio_at_rec: float, rd0: float, p: float) -> float:
 
 def alpha_for_target_ratio(z_rec: float, p: float, target_ratio: float) -> float:
     """
-    We want: H0_early / H0_local ≈ rd_true/rd0 = [(v_eff(z_rec)/v0)^p]
+    We want: H0_early / H0_local ~= rd_true/rd0 = [(v_eff(z_rec)/v0)^p]
     with v_eff(z)=v0*(1+z)^alpha -> ratio = (1+z_rec)^(alpha*p)
     => alpha = ln(target_ratio) / (p * ln(1+z_rec))
     """
@@ -103,7 +103,7 @@ def main() -> int:
 
     # Print results (human-readable)
     print("=== HQCB-B toy: calibration-driven H0 tension ===")
-    print("Author: Oscar Fuentes Fernández")
+    print("Author: Oscar Fuentes Fernandez
     print(f"Config: {args.config}")
     print(f"Targets: H0_local={cfg.H0_local:.3f}, H0_early_target={cfg.H0_early_target:.3f}")
     print(f"Solved alpha={alpha:.6e}  (v_eff ~ (1+z)^alpha)")
