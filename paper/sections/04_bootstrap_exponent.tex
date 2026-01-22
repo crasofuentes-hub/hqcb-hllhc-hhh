@@ -1,0 +1,17 @@
+\subsection{Cierre bootstrap}
+El “bootstrap” se define como un conjunto de condiciones de auto-consistencia que ligan el sector Higgs, la geometría cuántica y parámetros cosmológicos. Un ejemplo de ansatz es:
+\begin{equation}
+\rho_\Lambda \propto \left(\frac{v_{\mathrm{eff}}^2}{M_{\mathrm{Pl}}^2}\right)^{\gamma},
+\end{equation}
+donde $\gamma$ podría tomar un valor privilegiado bajo supuestos específicos.
+
+\subsection{El candidato $\gamma=11/3$: estatus correcto}
+En formato paper, $\gamma=11/3$ debe tratarse como:
+\begin{itemize}
+\item \textbf{(A) Resultado derivado}: si se demuestra desde operadores y conteo de dimensiones/anomalías en un esquema definido; o
+\item \textbf{(B) Parámetro inferible}: si aún no existe derivación completa, se infiere de datos (con prior informado) y se reporta sensibilidad a supuestos.
+\end{itemize}
+Este repositorio implementa el pipeline para (B) y deja el espacio formal para (A).
+
+\subsection{Dependencia de esquema / universalidad}
+Es crítico distinguir: (i) exponente universal (independiente de regularización/renormalización), vs. (ii) exponente efectivo que cambia con el esquema o con el truncamiento. El análisis debe incluir tests de robustez variando parametrizaciones del cierre.

@@ -1,0 +1,50 @@
+\documentclass[11pt]{article}
+
+\usepackage[a4paper,margin=1in]{geometry}
+\usepackage{amsmath,amssymb,amsfonts}
+\usepackage{physics}
+\usepackage{graphicx}
+\usepackage{hyperref}
+\usepackage{booktabs}
+\usepackage{siunitx}
+\usepackage{microtype}
+
+\title{HQCB: Higgs--Quantum Cosmological Bootstrap\\
+\large Acción efectiva, puente a discretización LQG/LQC y pipeline de inferencia}
+\author{Oscar Fuentes Fernández\\ \small Investigador independiente}
+\date{\today}
+
+\begin{document}
+\maketitle
+
+\begin{abstract}
+Presentamos el marco HQCB (Higgs--Quantum Cosmological Bootstrap), donde el valor esperado efectivo del Higgs $v_{\mathrm{eff}}$ evoluciona lentamente debido a un acoplo efectivo con geometría cuántica discreta (LQG/LQC), cerrando un conjunto de condiciones bootstrap que ligan parámetros de partículas y cosmología. Proponemos un pipeline reproducible de inferencia con likelihood gaussiana con covarianza (BAO) y contraste con $H_0$ (tensión de Hubble), junto con predicciones falsables.
+\end{abstract}
+
+\tableofcontents
+
+\section{Introducción}
+\input{sections/01_introduction.tex}
+
+\section{Formalismo mínimo: acción y ecuaciones de campo}
+\input{sections/02_action_field_equations.tex}
+
+\section{Puente a LQG/LQC: discretización, operadores y semiclasicalidad}
+\input{sections/03_lqg_bridge.tex}
+
+\section{Cierre bootstrap y el exponente $\gamma$ (candidato $11/3$)}
+\input{sections/04_bootstrap_exponent.tex}
+
+\section{Fenomenología cosmológica: $H(z)$, BAO y CMB (predicciones falsables)}
+\input{sections/05_cosmology_predictions.tex}
+
+\section{Inferencia estadística: likelihood con covarianza y comparación con modelos}
+\input{sections/06_inference_pipeline.tex}
+
+\section{Discusión, limitaciones y roadmap}
+\input{sections/07_discussion_roadmap.tex}
+
+\bibliographystyle{unsrt}
+\bibliography{bib/references}
+
+\end{document}

@@ -1,0 +1,9 @@
+\subsection{Likelihood gaussiana con covarianza}
+Para BAO se usa una likelihood multivariada:
+\begin{equation}
+\log \mathcal{L} = -\frac{1}{2}\Delta^T C^{-1}\Delta - \frac{1}{2}\log\left|2\pi C\right|,
+\end{equation}
+donde $\Delta = y_{\mathrm{obs}}-y_{\mathrm{pred}}$ y $C$ es la covarianza. El repositorio implementa esta estructura y la integra con un posterior toy para $\gamma$ y $H_0$.
+
+\subsection{Comparación con modelos competidores}
+El estándar académico exige comparar HQCB contra $\Lambda$CDM, $w$CDM y/o EDE usando métricas (AIC/BIC), Bayes factors o evidencias aproximadas. Este repositorio deja preparado el pipeline; el siguiente paso es conectar datasets reales y modelos base.

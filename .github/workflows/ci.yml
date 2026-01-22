@@ -82,3 +82,25 @@ jobs:
           if (-not (Test-Path $j))  { throw "Missing artifact: $j" }
           if (-not (Test-Path $f1)) { throw "Missing artifact: $f1" }
           Write-Host "OK: HQCB infer-data artifacts generated."
+      - name: Run make_paper_figures (paper-ready)
+        shell: pwsh
+        run: |
+          [Console]::OutputEncoding = [System.Text.Encoding]::UTF8
+          python scripts\make_paper_figures.py
+
+      - name: Verify paper skeleton + copied figures exist
+        shell: pwsh
+        run: |
+          $p1 = "paper/main.tex"
+          $p2 = "paper/sections/02_action_field_equations.tex"
+          $p3 = "paper/bib/references.bib"
+          if (-not (Test-Path $p1)) { throw "Missing: $p1" }
+          if (-not (Test-Path $p2)) { throw "Missing: $p2" }
+          if (-not (Test-Path $p3)) { throw "Missing: $p3" }
+
+          $f1 = "paper/figures/hqcb_b_v_ratio.png"
+          $f2 = "paper/figures/hqcb_b_H0_ratio.png"
+          if (-not (Test-Path $f1)) { throw "Missing: $f1" }
+          if (-not (Test-Path $f2)) { throw "Missing: $f2" }
+
+          Write-Host "OK: paper skeleton and copied figures exist."
