@@ -52,3 +52,19 @@ jobs:
           if (-not (Test-Path $f1)) { throw "Missing figure: $f1" }
           if (-not (Test-Path $f2)) { throw "Missing figure: $f2" }
           Write-Host "OK: HQCB-B figures generated."
+      - name: Run HQCB inference (toy)
+        shell: pwsh
+        run: |
+          [Console]::OutputEncoding = [System.Text.Encoding]::UTF8
+          python scripts\hqcb_infer.py --config data\cosmology\hqcb_infer_toy.yaml --out data\results\hqcb_infer_results.json --figdir docs\figures
+
+      - name: Verify HQCB inference artifacts exist
+        shell: pwsh
+        run: |
+          $j  = "data/results/hqcb_infer_results.json"
+          $f1 = "docs/figures/hqcb_infer_gamma_posterior.png"
+          $f2 = "docs/figures/hqcb_infer_H0_ratio.png"
+          if (-not (Test-Path $j))  { throw "Missing artifact: $j" }
+          if (-not (Test-Path $f1)) { throw "Missing artifact: $f1" }
+          if (-not (Test-Path $f2)) { throw "Missing artifact: $f2" }
+          Write-Host "OK: HQCB inference artifacts generated."

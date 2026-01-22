@@ -1,0 +1,28 @@
+# HQCB inference toy (paper-ready pipeline)
+# Units: H0 in km/s/Mpc ; rd in Mpc
+
+z_rec: 1100.0
+rd0_mpc: 147.0
+
+H0_local_obs: 73.0
+H0_local_sigma: 1.0
+
+H0_early_obs: 67.4
+H0_early_sigma: 0.6
+
+# "Cierre bootstrap" toy:
+# alpha(gamma) = -kappa_b*(gamma - gamma_ref)
+# rd_ratio = v_ratio^beta ; v_ratio = (1+z_rec)^alpha
+gamma_ref: 3.6666666667     # 11/3
+kappa_b: 1.0
+beta_rd_sensitivity: 0.25
+
+# Priors
+gamma_min: 3.0
+gamma_max: 4.5
+H0_min: 60.0
+H0_max: 80.0
+
+# Grid resolution
+grid_gamma: 401
+grid_H0: 321
