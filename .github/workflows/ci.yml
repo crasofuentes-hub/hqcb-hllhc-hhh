@@ -1,4 +1,4 @@
-name: CI (Windows) - tests + HQCB-B demo
+﻿name: CI (Windows) - tests + HQCB-B demo
 
 on:
   push:
@@ -7,7 +7,11 @@ on:
 jobs:
   windows:
     runs-on: windows-latest
-    strategy:
+    
+    env:
+      PYTHONUTF8: "1"
+      PYTHONIOENCODING: "utf-8"
+strategy:
       fail-fast: false
       matrix:
         python-version: ["3.12", "3.13"]
@@ -36,7 +40,9 @@ jobs:
       - name: Run HQCB-B demo (generate figures)
         shell: pwsh
         run: |
-          python scripts\hqcb_b_demo.py --config data\cosmology\hqcb_b_toy.yaml
+          
+          [Console]::OutputEncoding = [System.Text.Encoding]::UTF8
+python scripts\hqcb_b_demo.py --config data\cosmology\hqcb_b_toy.yaml
 
       - name: Verify HQCB-B figures exist
         shell: pwsh
