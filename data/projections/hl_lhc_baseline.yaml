@@ -1,0 +1,21 @@
+﻿model:
+  name: "gaussian_rate_forecast"
+
+assumptions:
+  sqrt_s_tev: 14.0
+  lumi_abinv: 3.0
+  rel_uncert_rate: 0.30
+
+sigma_points_fb:
+  - {kappa_lambda: 0.0, sigma_fb: 71.01}
+  - {kappa_lambda: 1.0, sigma_fb: 43.00}
+  - {kappa_lambda: 2.0, sigma_fb: 15.85}
+
+scan:
+  kappa_min: -5.0
+  kappa_max:  10.0
+  n_grid: 3001
+
+intervals:
+  cl68_delta_nll: 0.5
+  cl95_delta_nll: 1.92
