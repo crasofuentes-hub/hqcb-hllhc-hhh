@@ -68,3 +68,17 @@ jobs:
           if (-not (Test-Path $f1)) { throw "Missing artifact: $f1" }
           if (-not (Test-Path $f2)) { throw "Missing artifact: $f2" }
           Write-Host "OK: HQCB inference artifacts generated."
+      - name: Run HQCB infer-data (BAO mock)
+        shell: pwsh
+        run: |
+          [Console]::OutputEncoding = [System.Text.Encoding]::UTF8
+          python -m hqcb_hhh infer-data --config data\cosmology\hqcb_infer_data_mock.yaml
+
+      - name: Verify HQCB infer-data artifacts exist
+        shell: pwsh
+        run: |
+          $j  = "data/results/hqcb_infer_data_results.json"
+          $f1 = "docs/figures/hqcb_infer_joint_gamma.png"
+          if (-not (Test-Path $j))  { throw "Missing artifact: $j" }
+          if (-not (Test-Path $f1)) { throw "Missing artifact: $f1" }
+          Write-Host "OK: HQCB infer-data artifacts generated."

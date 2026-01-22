@@ -1,0 +1,26 @@
+# HQCB infer-data config (paper-ready skeleton)
+
+z_rec: 1100.0
+rd0_mpc: 147.0
+
+H0_local_obs: 73.0
+H0_local_sigma: 1.0
+
+H0_early_obs: 67.4
+H0_early_sigma: 0.6
+
+gamma_ref: 3.6666666667     # 11/3 (candidato HQCB)
+kappa_b: 1.0
+beta_rd_sensitivity: 0.25
+
+gamma_min: 3.0
+gamma_max: 4.5
+H0_min: 60.0
+H0_max: 80.0
+grid_gamma: 401
+grid_H0: 321
+
+# BAO mock likelihood (cov)
+bao_csv: data/likelihoods/bao_mock/bao.csv
+bao_cov: data/likelihoods/bao_mock/cov.txt
+bao_p_sensitivity: 0.20
