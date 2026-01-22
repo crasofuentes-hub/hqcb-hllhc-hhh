@@ -1,4 +1,4 @@
-# Copyright (c) 2026 Oscar Fuentes Fernández
+﻿# Copyright (c) 2026 Oscar Fuentes Fernández
 # SPDX-License-Identifier: AGPL-3.0-or-later
 
 from __future__ import annotations
@@ -110,7 +110,7 @@ def main() -> int:
     print(f"p_sensitivity={cfg.p_sensitivity:.4f}")
     print(f"v_ratio(z_rec)=(1+z_rec)^alpha = {v_ratio_rec:.6f}")
     print(f"rd_true(z_rec) = {rd:.4f} Mpc  (rd0={cfg.rd0_mpc:.4f})")
-    print(f"H0_early_inferred ≈ H0_local*(rd_true/rd0) = {H0_early_inferred:.3f} km/s/Mpc")
+    print(f"H0_early_inferred ~ H0_local*(rd_true/rd0) = {H0_early_inferred:.3f} km/s/Mpc")
 
     # Figures
     figdir = Path(cfg.figures_dir)
